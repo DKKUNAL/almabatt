@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+        }
+        body{
+            /* background-image: url("D:/front_end/photos/bom2.jpg"); */
+            /* height: 500px; */
+            /* width: 1000px; */
+            /* background-repeat: no-repeat; */
+            /* margin-top: 200px; */
+        }
+        .con ul {
+            display: flex;
+            justify-content: center; 
+        }
+
+        .con ul li {
+            list-style: none;
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+
+         .con ul li a {
+            text-decoration: none;
+            font-size: 15px;
+            color: rgb(42, 70, 14);
+        }
+
+        header {
+            background-color: rgb(4, 92, 4);
+            height: 50px;
+            width: 100%;
+            position: relative;
+            z-index: 30;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        li {
+            list-style: none;
+            margin-top: 10px;
+            padding: 0 30px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: ivory;
+        }
+        
+        ul li ul{
+            display: flex;
+            flex-direction: column;
+        /* right: 40px; */
+        background-color: azure;
+            
+        }
+        ul li a:hover{
+          background-color: azure;
+          color: black;
+        } 
+        ul li ul li
+        {
+            background-color: azure;
+            display: none;
+            z-index: 5;
+            position: relative;
+            /* right: 40px; */
+        }
+
+        ul li ul li a{
+            text-decoration: none;
+            font-size: 18px;
+            color:black;
+            padding: 0px 0px;
+            /* background-color: rgb(4, 92, 4); */
+
+        }
+        ul li:hover ul li{
+            display: block;
+        }
+        
+        .con2 img{
+            height: 500px;
+            width: 100%;
+            position: absolute;
+            /* margin-top: 20px; */
+      
+        }
+        .con2 div img{
+            height: 500px;
+            width: 100%;
+            position: absolute;
+            /* margin-top: 20px; */
+            animation-name: move;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in;
+          animation-iteration-count: 1;
+        animation-fill-mode: none;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation-direction: normal;
+        }
+         .con2  img:hover
+        {
+            background-color: cornsilk;
+            z-index: -1; 
+        }
+        /* @keyframes move{
+            from{width: 400px;}
+            to{ width: 1200px;}
+        } */
+
+        @keyframes move {
+            
+            0%
+            {
+                width: 400px;
+                display: none;
+
+            }
+            25%
+            {
+                width: 600px;
+                display: flex;
+            }
+            50%
+            {
+                transform: translate(0,300px);
+                display: none;
+            }
+            75%
+            {
+                height: 500px;
+                transform: rotateZ(45deg);
+                visibility: visible;
+
+            
+            }
+            100%
+            {
+                height:100vh;
+                width: 120%;
+                visibility: visible;
+            } 
+         
+        }   
+
+        h1{
+            color: rgb(61, 42, 165);
+            font-size: 60px;
+            margin-top: 560px;
+            margin-left: 230px;
+        }
+         h2 a{
+             
+             font-size: 30px;
+             color: black;
+             margin-left: 340px;
+         }   
+         pre{
+        margin-left: 200px;
+        font-size: 20px;
+         }
+        .ol{
+    background: #ddd;
+    width: 100%;
+    margin: 0px 0 20px;
+    overflow: hidden;
+    display: block;
+        }
+        .ol p{
+            text-align: justify;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="left"> <img src="" height="20px">
+Bombay hospital</marquee>
+    <div class="con">
+        <ul>
+            <li><a href="#"><img src="D:\front_end\photos\logo.jpg"></a></li>
+            <li> <a href="#">Transplant Facilities Available |</a>  </li>
+            <li><a href="#">Executive Health Schemes |</a></li>
+            <li><a href="#">Photo Gallery |</a></li>
+            <li><a href="#">Downloads |</a></li>
+            <li><a href="#">Contact Us |</a></li>
+        </ul>
+    </div>
+    <header>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">About us</a>
+                <ul>
+                <li><a href="#">FOUNDERS</a></li>
+                <li><a href="#">HISTORY</a></li>
+                <li><a href="#">Hospital Location</a></li>
+                <li><a href="#">Management Board</a></li>
+                <li><a href="#">Vision mission & motto</a></li>
+                <li><a href="#">Philoshopy</a></li>
+                </li></ul>
+            <li><a href="#">Services</a>
+                 <ul>
+             <li><a href="#">Diagnostic</a></li>
+             <li><a href="#">Medical</a></li>
+             <li><a href="#">Round the clock</a></li>
+             <li><a href="#">Health liberary</a></li>
+             <li><a href="#">Surgical</a></li>
+             <li><a href="#">Therapeutic</a></li>  
+            </ul></li>
+            <li><a href="#">In-Patient Guide</a>
+                 <ul>
+            <li><a href="#">Admission Procedures</a></li>
+            <li><a href="#">Billing</a></li>
+            <li><a href="#">Medicalim</a></li>
+            <li><a href="#">Teliphone number</a></li>
+            <li><a href="#">meals</a></li>
+            <li><a href="#">Room facilities</a></li>
+            <li><a href="#">Visiting hours</a></li>
+           </ul></li>
+            <li><a href="#">Panel of Consultants</a></li>
+            <li><a href="#">BPL Portal</a></li>
+            <li><a href="#">Virtul Tour</a></li>
+        </ul>
+    </header>
+    <div class="con2">
+        <img src="D:/front_end/photos/icon.jpg">
+       <div> <img src="D:\front_end\photos\bom2.jpg"></div>
+</div>
+    <h1>Bombay Hospitle Indore</h1><br>
+    <h2><a href="#">full time world class doctors</a></h2><br>
+    <p>Considered the premier private trust hospital in India which was Set up in 1950s by the great philanthropist Shri Rameshwar Das ji Birla.
+        Every year around 2 lakh OPD patients &<pre> 28000 inpatients flock to Bombay Hospital – Bombay for various kinds of treatment.</pre></p>
+<div class="ol">
+    <img src="D:\front_end\photos\ol.jpg">
+    <p>Charity and the pursuit of excellence are the two fundamental ideals that provide us impetus to focus on the well being of the patient who is our primary responsibility. We have an obligation to provide the best possible treatment, delivered most efficiently, in the shortest possible time span and at minimum cost.
+
+        On this bedrock of charity we are relentlessly building the bedrock of excellence in the hospital by continuously refurbishing its spaces, installing the most modern medical equipments and injecting professionalism and dedication in our management team, so that our world class doctors can discharge their duties and responsibilities in an academically stimulating and hassle-free environment.</p>
+</div>
+
+
+
+
+    </body>
+</html>
