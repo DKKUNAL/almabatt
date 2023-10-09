@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>live project</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            /* */
+        }
+
+        body {
+            background-image: url("D:/front_end/photos/dps.jpeg");
+            height: 860px;
+            width: 100%;
+            /* margin-top: 15px; */
+        }
+
+
+        header {
+            height: 30px;
+            background-color: #3d683a;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            height: 150px;
+            width: 360px;
+            background-color: #3d683a;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            left: 125px;
+        }
+
+        .logo img {
+            height: 75px;
+            width: 170px;
+            position: relative;
+            display: flex;
+        }
+
+        h1 {
+            color: white;
+            font-size: 20px;
+        }
+
+        header .button {
+            width: 15%;
+            margin-left: 130px;
+        }
+
+        header .button a {
+            font-size: 13px;
+            background-color: #fdc30e;
+            border: solid 4px #fdc30e;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .marquee {
+            width: 40%;
+            font-size: 15px;
+            color: #FFF;
+            margin: 0;
+        }
+
+        .box1 {
+            width: 600px;
+            height: 180px;
+            background-color: rgb(228, 228, 183);
+            display: block;
+            position: relative;
+            margin-top: 380px;
+            margin-left: 100px;
+
+        }
+
+        .box1 h1 {
+            color: #fff;
+            background: #973230;
+            height: 30px;
+            width: 587px;
+            padding-top: 10PX;
+            padding-left: 15px;
+
+        }
+
+        .box1 img {
+            float: left;
+            padding-top: 8px;
+            margin-top: 8px;
+            padding-right: 8px;
+            background-color: rgb(228, 228, 183);
+        }
+
+        .box1 p {
+            background-color: rgb(228, 228, 183);
+            font-size: 1.2em;
+            line-height: 1em;
+            text-align: justify;
+            margin-top: 20px;
+            color: #333333;
+        }
+
+        .box2 {
+            width: 600px;
+            height: 180px;
+            background-color: rgb(228, 228, 183);
+            display: block;
+            position: relative;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+
+        .box2 img {
+            float: left;
+            padding-top: 8px;
+            margin-top: 8px;
+            padding-right: 8px;
+            background-color: rgb(228, 228, 183);
+        }
+
+        .box2 h1 {
+            color: #fff;
+            background-color: #ddac3e;
+            height: 30px;
+            width: 587px;
+            padding-top: 10PX;
+            padding-left: 15px;
+        }
+
+        .box2 p {
+            background-color: rgb(228, 228, 183);
+            font-size: 1.2em;
+            line-height: 1em;
+            text-align: justify;
+            margin-top: 20px;
+            color: #333333;
+        }
+
+        .box3 {
+            width: 430px;
+            height: 380px;
+            background-color: #ddf1f6;
+            position: absolute;
+            top: 460px;
+            left: 750px;
+        }
+
+        .box3 img {
+            position: absolute;
+            width: 70px;
+            height: 100%;
+        }
+
+        .box3 h3 {
+            background-color: #ddf1f6;
+            margin-top: 10px;
+            margin-left: 260px;
+        }
+
+        .box3 h3 a {
+            background-color: #ddf1f6;
+            color: #3f9297;
+            text-decoration: none;
+        }
+
+        .abbr h6 {
+            color: #fff;
+            background-color: #3f9297;
+            height: 30px;
+            width: 285px;
+            padding-top: 10PX;
+            padding-left: 15px;
+        }
+
+        .abbr img {
+            float: center;
+            padding-top: 8px;
+            margin-top: 8px;
+            background-color: white;
+            height: 120px;
+            width: 250px;
+        }
+
+        .abbr {
+            margin-top: 30px;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            color: #3f9297;
+            margin-left: 100px;
+        }
+
+        .abbr h4 {
+            margin-top: 130px;
+            color: #3f9297;
+            background-color: white;
+            margin-left: 20px;
+        }
+
+        .list {
+            height: 20px;
+            width: 110px;
+            background-color: #973230;
+            margin-top: 10px;
+            margin-left: 540px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list ul {
+            background-color: #973230;
+            border: #973230 2px solid;
+            border-radius: 2px;
+        }
+
+        .list ul li {
+            display: inline;
+        }
+
+        .list ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            background-color: #973230;
+        }
+
+        .lis {
+            height: 20px;
+            width: 120px;
+            background-color: #0193ce;
+            margin-top: -20px;
+            margin-left: 670px;
+            border: #0193ce 2px solid;
+            border-radius: 2px;
+        }
+
+        .lis ul {
+            background-color: #0193ce;
+        }
+
+        .lis ul li {
+            display: inline;
+        }
+
+        .lis ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            background-color: #0193ce;
+        }
+
+        .li {
+            height: 20px;
+            width: 120px;
+            background-color: #8c54a2;
+            margin-top: -24px;
+            margin-left: 810px;
+            border: #8c54a2 2px solid;
+            border-radius: 2px;
+        }
+
+        .li ul {
+            background-color: #8c54a2;
+        }
+
+        .li ul li {
+            display: inline;
+        }
+
+        .li ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            background-color: #8c54a2;
+        }
+
+        .l {
+            height: 20px;
+            width: 85px;
+            background-color: #88a63d;
+            margin-top: -24px;
+            margin-left: 950px;
+            border: #88a63d 2px solid;
+            border-radius: 2px;
+        }
+
+        .l ul {
+            background-color: #88a63d;
+        }
+
+        .l ul li {
+            display: inline;
+        }
+
+        .l ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            background-color: #88a63d;
+        }
+
+        .ol {
+            height: 20px;
+            width: 85px;
+            background-color: #09b386;
+            margin-top: -24px;
+            margin-left: 1060px;
+            border: #09b386 2px solid;
+            border-radius: 2px;
+        }
+
+        .ol ul {
+            background-color: #09b386;
+        }
+
+        .ol ul li {
+            display: inline;
+        }
+
+        .ol ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            background-color: #09b386;
+        }
+
+        .big {
+            width: 1000px;
+            height: 175px;
+            margin-top: 50px;
+            margin-left: 120px;
+            background-color: #f1f1f2;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr 1fr;
+            grid-template-rows: 150px 1fr 1fr 1fr;
+            /* grid-template-rows: 1; */
+            border: 2px solid black;
+            grid-gap: 50px;
+        }
+
+        .big img {
+            height: 150px;
+            width: 200px;
+            background-color: #f1f1f2;
+            /* margin-bottom: -3 ; */
+            border: 2px solid yellow;
+            /* margin-top: 10px; */
+
+        }
+
+        .big1 {
+            background-color: #f1f1f2;
+            /* height: 150px;
+            width: 200px; */
+            margin-top: 10px;
+        }
+  
+
+        .big2 {
+
+            height: 150px;
+            width: 200px;
+            margin-top: 10px;
+
+        }
+
+        .big3 {
+
+            height: 148px;
+            width: 200px;
+            margin-top: 10px;
+
+        }
+
+
+        .big4 {
+
+            height: 150px;
+            width: 200px;
+            margin-top: 10px;
+        }
+        .b234
+        {
+            margin-top: 23px;
+            background-color: #3d683a;
+            width: 100vw;
+            height: 520px;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="D:\front_end\photos\logo.jpeg">
+            <h1>Delhi Public School <br>...............................</h1>
+            <h1>indore</h1>
+        </div>
+        <div class="button">
+            <a href="#">E-magazine</a>
+
+            <a href="#">DPS COD Indore</a>
+
+        </div>
+        <div class="school">
+            <a href="#"> <img src="D:\front_end\photos\schoolpad.jpg" height="80%" width="100%"></a>
+        </div>
+        <div class="marquee">
+            <marquee behavior="scroll" direction="left"> &#9889 ADMISSION OPEN FOR 2022-2223 &#9889 </marquee>
+        </div>
+    </header>
+    <div class="list">
+        <ul>
+            <li><a href="#">ABOUT US </a></li>
+        </ul>
+    </div>
+    <div class="lis">
+        <ul>
+            <li><a href="#">ACADEMICS</a></li>
+        </ul>
+    </div>
+    <div class="li">
+        <ul>
+            <li><a href="#">ADMISSION</a></li>
+        </ul>
+    </div>
+    <div class="l">
+        <ul>
+            <li><a href="#">CAMPUS</a></li>
+        </ul>
+    </div>
+    <div class="ol">
+        <ul>
+            <li><a href="#">AWARDS</a></li>
+        </ul>
+    </div>
+    <div class="box1">
+        <h1>PROUD TO BE A DIPSITE</h1>
+        <img src="https://dpsindore.org/nityata-c-s.jpg">
+        <p>
+            WFM Nityata Jain represented India & achieved 24th position in World Youth Chess Championship 2019 in Under
+            16 Girls Category held at Mumbai from 1 to 13 October 2019. Nityata scored 6 points out of 11 rounds with 5
+            wins & 2 draws</p>
+    </div>
+    <div class="box2">
+        <h1>SCHOOL UPDATES</h1>
+        <img src="D:\front_end\photos\tuhina.jpg">
+        <p>Tuhina Bhuniya selected for the young scientist program by ISRO</p>
+    </div>
+    <div class="box3">
+        <img src="D:\front_end\photos\news.png">
+        <div class="abbr">
+            <h6>INTER DPS CHILDREN'S ART COMPETITION</h6>
+            <img src="D:\front_end\photos\nn.jpg">
+            <br>
+            <h4>
+                DIPSITE Suhani Bhandari Class IX secured First Position in Dance Competition ( Category- Kathak & Folk
+                Dance) conducted online organised by Hindustan Arts and Music Society on 25 -27 June’21.</h4>
+        </div>
+        <h3><a href="#"> >>READ MORE </a></h3>
+    </div>
+    <div class="b234">
+    <div class="big">
+
+         <div class="big1">
+            <a href="#"> <img src="D:\front_end\photos\1h.jpg"></a>
+        </div>
+        <div class="big2">
+            <a href="#"><img src="D:\front_end\photos\2h.jpg"></a>
+        </div>
+        <div class="big3">
+            <a href="#"><img src="D:\front_end\photos\3h.jpg"></a>
+        </div>
+        <div class="big4">
+            <a href="#"><img src="D:\front_end\photos\4h.jpg"></a>
+        </div> 
+    </div>
+</div>
+</body>
+
+</html>
